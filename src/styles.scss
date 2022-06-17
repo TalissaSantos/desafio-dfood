@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@charset 'utf-8';
+
+@import  './scss/_reset.scss';
+@import './app/core/footer/footer.component.scss';
+@import './scss/_colors.scss'
