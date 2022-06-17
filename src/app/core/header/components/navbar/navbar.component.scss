@@ -1,0 +1,17 @@
+.cabecalho-nav {
+  display: flex;
+  font-size: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  // & copia exatamente o nome do pai
+  &-li {
+    display: flex;
+    font-size: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 20px;
+  }
+}
