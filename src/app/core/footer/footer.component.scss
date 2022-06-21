@@ -1,20 +1,14 @@
-
+@import '/src/styles.scss';
 
 footer {
-  background: linear-gradient(
-    #ff0f7b,
-    #ff2469,
-    #ff3658,
-    #fe4748,
-    #f95738);
-  ;
+  background: $gradient;
   width: 100%;
   position: absolute;
   bottom: 0;
   height: 20vh;
 
   p {
-    color: black;
+    color: $color-font;
     text-align: center;
     font-size: 15px;
     margin-top: 100px;
