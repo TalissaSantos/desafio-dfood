@@ -1,9 +1,4 @@
-$color-font: #faf0ca;
-$gradient: linear-gradient(
-  #ff0f7b,
-  #ff2469,
-  #ff3658,
-  #fe4748);
+@import '/src/styles.scss';
 
 
 .container {
@@ -13,4 +8,5 @@ $gradient: linear-gradient(
   justify-content: space-between;
   padding: 30px 25px;
   color: $color-font;
+  font-family: 'Roboto', sans-serif;
 }
