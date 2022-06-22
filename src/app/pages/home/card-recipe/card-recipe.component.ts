@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { CardsHomeService } from 'src/app/services/cards-home.service';
 import { CardHome } from 'src/models/cards-interface';
 
 @Component({
@@ -8,17 +9,12 @@ import { CardHome } from 'src/models/cards-interface';
 })
 export class CardRecipeComponent implements OnInit {
 
+  @Input()  card!: CardHome;
 
+  constructor() {}
 
-
-
-
-
-
-
-  constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
 }

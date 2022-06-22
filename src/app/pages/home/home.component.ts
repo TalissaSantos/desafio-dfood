@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CardsHomeService } from 'src/app/services/cards-home.service';
 import { CardHome } from 'src/models/cards-interface';
 
@@ -8,22 +8,11 @@ import { CardHome } from 'src/models/cards-interface';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  cards!: CardHome[];
 
-
-  cards: CardHome[] = [];
-
-
-
-  constructor(private cardService: CardsHomeService) {
-
-   }
+  constructor(private cardService: CardsHomeService) {}
 
   ngOnInit(): void {
-
     this.cards = this.cardService.getCards();
-
-
   }
-
-
 }

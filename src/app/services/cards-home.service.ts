@@ -11,12 +11,13 @@ export class CardsHomeService {
 
   getCards(): CardHome[] {
     return [
-      { img: 'assets/image/home_frango.jpg', title: 'frango' },
+      { img: 'assets/image/home_frango2.jpg', title: 'Frango' },
       { img: 'assets/image/home_carne_vermelha.jpg', title: 'Carne Vermelha' },
       { img: 'assets/image/home_carne_porco.jpg', title: 'Carne de Porco' },
-      { img: 'assets/image/home_morango.jpg', title: 'morango' },
-      { img: 'assets/image/home_banana.jpg', title: 'banana' },
-      { img: 'assets/image/home_limao.jpg', title: 'limao' }
+      { img: 'assets/image/home_morango.jpg', title: 'Morango' },
+      { img: 'assets/image/home_banana2.jpg', title: 'Banana' },
+      { img: 'assets/image/home_limoes.jpg', title: 'Limao' },
+
     ];
   }
 }

@@ -1,8 +1,8 @@
-<section>
-  <div *ngFor="let card of cards">
-    <img [src]="card.img" alt="imagem com uma banana" />
-    <p  >{{ card.title }}</p>
+  <main class="main-card">
+    <h1 class="card-h1">Receitas sem desperdicios</h1>
+    <div class="cards-div">
+  <div class="card-list " *ngFor="let card of cards">
+    <app-card-recipe class="cards " [card]="card"></app-card-recipe>
   </div>
-</section>
-
-
+</div>
+</main>

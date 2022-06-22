@@ -1,4 +1,25 @@
+@import '/src/styles.scss';
 
-img{
-  width: 100px;
+.card-a {
+  cursor: pointer;
+  text-decoration: none;
+
+
+
+
+
+  &-img {
+
+    border-radius: 8px;
+
+    max-width: 200px;
+    object-fit: cover;
+  }
+
+  &-p {
+    color: $color-font;
+    font-family: $font;
+    font-weight: bold;
+    font-size: $font-size;
+  }
 }
