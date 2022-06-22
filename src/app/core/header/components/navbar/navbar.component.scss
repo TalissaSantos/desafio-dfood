@@ -7,7 +7,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
-  // & copia exatamente o nome do pai
+  font-family: $font;
+
   &-li {
     display: flex;
     font-size: 20px;
