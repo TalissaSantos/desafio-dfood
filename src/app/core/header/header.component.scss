@@ -8,5 +8,12 @@
   justify-content: space-between;
   padding: 30px 25px;
   color: $color-font;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font;
+  height: 20%;
 }
+
+h1{
+  cursor: pointer;
+
+  }
+
