@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FooterComponent } from './core/footer/footer.component';
-import { NavbarComponent } from './core/header/components/navbar/navbar.component';
 
 import { HomeModule } from './pages/home/home.module';
+import { RecipesModule } from './pages/recipes/recipes.module';
 
 // quando o path for vazio joga pro home
 const routes: Routes = [
@@ -12,17 +11,22 @@ const routes: Routes = [
     loadChildren: () => HomeModule
   },
   {
-    path: 'home',
+    path: '',
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path:'recipes',
+    loadChildren: ( ) => RecipesModule
+
+  }
 
 
 ]
-RouterModule.forRoot([
-  {path:'inicio', component: NavbarComponent},
-  {path:'receita',component: FooterComponent},
-])
+// RouterModule.forRoot([
+//   {path:'inicio', component: NavbarComponent},
+//   {path:'receita',component: FooterComponent},
+// ])
 
 
 @NgModule({
