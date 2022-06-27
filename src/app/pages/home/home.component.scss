@@ -1,36 +1,23 @@
 @import '/src/styles.scss';
 
 .card-h1 {
-
   font-size: 30px;
   text-align: center;
   padding: 20px;
   color: #800080;
-
-
-
 }
 
 .main-card {
   background-color: #FDF5E6;
   font-family: $font;
-
+  height: 60%;
 }
 
 .card-list {
-  display: flex;
   justify-content: center;
   text-align: center;
-
-
-}
-
-.cards-div {
   display: grid;
   grid-template-columns: repeat(3, 0.2fr);
   grid-template-rows: 200px 200px;
   justify-content: center;
-
-
-
 }
