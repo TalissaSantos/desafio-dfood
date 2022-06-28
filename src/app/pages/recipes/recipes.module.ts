@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { RecipesRoutingModule } from './recipes-routing.module';
 import { RecipesComponent } from './recipes.component';
-import { RecipesNaoEncontradaComponent } from './recipes-nao-encontrada/recipes-nao-encontrada.component';
+import { RecipesNaoEncontradaComponent } from '../../recipes-nao-encontrada/recipes-nao-encontrada.component';
 import { CardsHomeService } from 'src/app/services/cards-home.service';
 import { FormsModule } from '@angular/forms';
 

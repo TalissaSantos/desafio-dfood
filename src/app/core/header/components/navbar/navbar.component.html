@@ -1,6 +1,8 @@
 <nav>
-<ul class="cabecalho-nav">
-  <!-- pra entra o &  -->
-  <li  class="cabecalho-nav-li" *ngFor="let menu of menus"><a routerLink="" class="cabecalho-nav-a"  >{{ menu }}</a></li>
-</ul>
+  <ul class="cabecalho-nav">
+    <!-- pra entra o &  -->
+    <li class="cabecalho-nav-li" *ngFor="let menu of menus">
+      <a [routerLink]="menu.link" class="cabecalho-nav-a">{{ menu.title }}</a>
+    </li>
+  </ul>
 </nav>
