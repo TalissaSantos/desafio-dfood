@@ -22,11 +22,9 @@ const routes: Routes = [
   }
 
 
+
 ]
-// RouterModule.forRoot([
-//   {path:'inicio', component: NavbarComponent},
-//   {path:'receita',component: FooterComponent},
-// ])
+
 
 
 @NgModule({
