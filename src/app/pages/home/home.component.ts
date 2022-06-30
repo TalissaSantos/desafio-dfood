@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Subscription } from 'rxjs';
 
 import { CardsHomeService } from 'src/app/services/cards-home.service';
 import { CardHome } from 'src/models/cards-interface';

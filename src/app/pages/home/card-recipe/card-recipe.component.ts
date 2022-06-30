@@ -1,5 +1,4 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
-import { CardsHomeService } from 'src/app/services/cards-home.service';
 import { CardHome } from 'src/models/cards-interface';
 
 @Component({
@@ -8,13 +7,9 @@ import { CardHome } from 'src/models/cards-interface';
   styleUrls: ['./card-recipe.component.scss']
 })
 export class CardRecipeComponent implements OnInit {
-
-  @Input()  card!: CardHome;
+  @Input() card!: CardHome;
 
   constructor() {}
 
-
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 }

@@ -6,15 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { CardsHomeService } from './services/cards-home.service';
-import { FormRecipesComponent } from './pages/form-recipes/form-recipes.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, FormRecipesComponent],
-  imports: [BrowserModule, AppRoutingModule, CoreModule, RouterModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, CoreModule, RouterModule, ReactiveFormsModule,],
   providers: [CardsHomeService],
   bootstrap: [AppComponent],
   exports: [
-    FormRecipesComponent
   ]
 })
 export class AppModule {}

@@ -1,0 +1,10 @@
+<form [formGroup]="form">
+  <div>
+    <label for="">nome</label>
+    <input type="text" formControlName="recipe">
+
+  </div>
+
+  <button (click)="onSubmit()">Salvar</button>
+  <button (click)="onCancel()">Cancelar</button>
+</form>
