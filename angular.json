@@ -97,5 +97,7 @@
       }
     }
   },
-  "defaultProject": "desafio-dfood"
+  "cli": {
+    "analytics": "7fb7899e-8898-428b-95c0-d8852e6778fd"
+  }
 }

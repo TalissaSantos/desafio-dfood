@@ -1,10 +1,55 @@
-<form [formGroup]="form">
-  <div>
-    <label for="">nome</label>
-    <input type="text" formControlName="recipe">
-
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h1>Adicione sua receita</h1>
+  <div style="margin: 10px">
+    <label for="">Categoria: </label>
+    <select name="" id="category" formControlName="category">
+      <option *ngFor="let category of categories" [value]="category.category">
+        {{ category.category }}
+      </option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="recipe" class="form-label" class="control-label">Imagem: </label>
+  </div>
+  <div class="col-sm-12">
+    <input type="file" class="form-control" formControlName="recipe" id="recipe" placeholder="" required />
+  </div>
+  <div class="form-group">
+    <label for="recipe" class="form-label" class="control-label">Receita: </label>
+  </div>
+  <div class="col-sm-12">
+    <input type="recipe" class="form-control" formControlName="recipe" id="recipe" placeholder="" required />
   </div>
 
-  <button (click)="onSubmit()">Salvar</button>
-  <button (click)="onCancel()">Cancelar</button>
+  <div class="form-group">
+    <label for="createdBy" class="form-label" class="control-label">Criado por: </label>
+  </div>
+
+  <input type="createdBy" class="form-control" formControlName="createdBy" id="createdBy" placeholder="" required />
+
+  <div class="form-group">
+    <label for="serves">Serve: </label>
+  </div>
+
+  <input type="serves" class="form-control" formControlName="serves" id="serves" placeholder="" required />
+
+  <div class="form-group">
+    <label for="preparationTime">Tempo de preparo: </label>
+  </div>
+  <div class="col-sm-12">
+    <input type="preparationTime" formControlName="preparationTime" id="preparationTime" placeholder="" required />
+  </div>
+  <div class="form-group">
+    <label for="ingredients">Ingredientes: </label>
+  </div>
+  <div class="col-sm-12">
+    <input type="ingredients" formControlName="ingredients" id="ingredients" placeholder="" required />
+  </div>
+
+  <div>
+    <label for="methodOfPreparation">Modo de Preparo: </label>
+    <textarea id="methodOfPreparation" cols="70" rows="5" formControlName="methodOfPreparation"></textarea>
+  </div>
+
+  <button>Salvar</button>
 </form>
