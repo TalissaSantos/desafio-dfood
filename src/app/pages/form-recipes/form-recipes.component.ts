@@ -20,7 +20,7 @@ export class FormRecipesComponent implements OnInit {
       category: [null, [FormValidations.equalsTo('category')]],
       image: [null, Validators.required],
       recipe: [null, [Validators.required, Validators.minLength(4), Validators.maxLength(35)]],
-      createdBy: [null, [Validators.required, Validators.minLength(10), Validators.maxLength(30)]],
+      createdBy: [null, [Validators.required, Validators.minLength(2), Validators.maxLength(30)]],
       serves: [null, [Validators.required, Validators.minLength(5)]],
       preparationTime: [null, [Validators.required, Validators.minLength(5)]],
       ingredients: this.buildIngredients(),
@@ -33,8 +33,12 @@ export class FormRecipesComponent implements OnInit {
   }
 
 
-
-
+  verificaValidTouched(campo: string) {
+    return (
+      !this.form.get(campo)?.valid &&
+      !!this.form.get(campo)?.touched
+    );
+  }
 
   //formArray ingredientes
   buildIngredients() {}

@@ -6,13 +6,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { CategoriesService } from 'src/app/services/categories.service';
+import { ControlErroComponent } from './control-erro/control-erro.component';
 
 
 
 @NgModule({
-  declarations: [FormRecipesComponent],
+  declarations: [FormRecipesComponent,ControlErroComponent],
   imports: [CommonModule, FormRecipesRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],
-  exports: [FormRecipesComponent],
+  exports: [FormRecipesComponent,ControlErroComponent],
   providers: [CategoriesService]
 })
 export class FormRecipesModule {}

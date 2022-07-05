@@ -1,6 +1,7 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()"  >
   <h1>Adicione sua receita</h1>
-  <div style="margin: 10px">
+  <div class="c-input">
     <label for="">Categoria: </label>
     <select name="" id="category" formControlName="category">
       <option *ngFor="let category of categories" [value]="category.category">
@@ -8,48 +9,77 @@
       </option>
     </select>
   </div>
-  <div class="form-group">
-    <label for="recipe" class="form-label" class="control-label">Imagem: </label>
-  </div>
-  <div class="col-sm-12">
-    <input type="file" class="form-control" formControlName="recipe" id="recipe" placeholder="" required />
-  </div>
-  <div class="form-group">
-    <label for="recipe" class="form-label" class="control-label">Receita: </label>
-  </div>
-  <div class="col-sm-12">
-    <input type="recipe" class="form-control" formControlName="recipe" id="recipe" placeholder="" required />
+
+  <div class="c-input">
+    <label for="recipe"class="c-input-label">Imagem: </label>
+    <input type="file" formControlName="image" id="Image" placeholder=""  />
+    <app-control-erro
+    [mostrarErro]="verificaValidTouched('image')"
+    msgErro="A imagem é obrigatorio">
+  </app-control-erro>
   </div>
 
-  <div class="form-group">
-    <label for="createdBy" class="form-label" class="control-label">Criado por: </label>
+  <div class="c-input">
+    <label for="recipe" class="c-input-label" class="control-label">Receita: </label>
+    <input type="text" formControlName="recipe" id="recipe" placeholder=""  />
+    <app-control-erro
+    [mostrarErro]="verificaValidTouched('recipe')"
+    msgErro="Receita é obrigatorio">
+  </app-control-erro>
   </div>
 
-  <input type="createdBy" class="form-control" formControlName="createdBy" id="createdBy" placeholder="" required />
 
-  <div class="form-group">
-    <label for="serves">Serve: </label>
+  <div class="c-input">
+    <label for="createdBy" class="c-input-label">Criado por: </label>
+    <input type="text" formControlName="createdBy" id="createdBy" placeholder=""  />
+    <app-control-erro
+    [mostrarErro]="verificaValidTouched('createdBy')"
+    msgErro="Criador é obrigatorio">
+  </app-control-erro>
   </div>
 
-  <input type="serves" class="form-control" formControlName="serves" id="serves" placeholder="" required />
 
-  <div class="form-group">
+  <div class="c-input">
+    <label for="serves" class="c-input-label">Serve: </label>
+    <input type="text" formControlName="serves" id="serves" placeholder=""  />
+    <app-control-erro
+    [mostrarErro]="verificaValidTouched('serves')"
+    msgErro="Quantidade que serve é obrigatorio">
+  </app-control-erro>
+  </div>
+
+
+  <div class="c-input">
     <label for="preparationTime">Tempo de preparo: </label>
-  </div>
-  <div class="col-sm-12">
-    <input type="preparationTime" formControlName="preparationTime" id="preparationTime" placeholder="" required />
-  </div>
-  <div class="form-group">
-    <label for="ingredients">Ingredientes: </label>
-  </div>
-  <div class="col-sm-12">
-    <input type="ingredients" formControlName="ingredients" id="ingredients" placeholder="" required />
+    <input type="text" formControlName="preparationTime" id="preparationTime" placeholder=""  />
+    <app-control-erro
+    [mostrarErro]="verificaValidTouched('preparationTime')"
+    msgErro="Tempo de preparo é obrigatorio">
+  </app-control-erro>
   </div>
 
-  <div>
-    <label for="methodOfPreparation">Modo de Preparo: </label>
+
+  <div class="c-input">
+    <label for="ingredients" class="c-input-label">Ingredientes: </label>
+    <input type="ingredients" formControlName="ingredients" id="ingredients" placeholder=""  />
+    <app-control-erro
+    [mostrarErro]="verificaValidTouched('ingredients')"
+    msgErro="Ingredientes são obrigatorio">
+  </app-control-erro>
+  <button>Adicionar</button>
+  </div>
+
+
+
+  <div class="c-input">
+    <label for="methodOfPreparation" class="c-input-label">Modo de Preparo: </label>
     <textarea id="methodOfPreparation" cols="70" rows="5" formControlName="methodOfPreparation"></textarea>
+    <app-control-erro
+    [mostrarErro]="verificaValidTouched('methodOfPreparation')"
+    msgErro="Modo de preparo é obrigatorio">
+  </app-control-erro>
   </div>
 
   <button>Salvar</button>
 </form>
+

@@ -13,10 +13,18 @@ import { FormRecipesModule } from './pages/form-recipes/form-recipes.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, CoreModule, RouterModule, ReactiveFormsModule,CommonModule, HttpClientModule,FormRecipesModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CoreModule,
+    RouterModule,
+    ReactiveFormsModule,
+    CommonModule,
+    HttpClientModule,
+    FormRecipesModule
+  ],
   providers: [CardsHomeService],
   bootstrap: [AppComponent],
-  exports: [
-  ]
+  exports: []
 })
 export class AppModule {}

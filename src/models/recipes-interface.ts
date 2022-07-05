@@ -7,5 +7,5 @@ export interface Recipe {
   serves: string;
   preparationTime: string;
   ingredients: string[];
-  methodOfPreparation: string[];
+  methodOfPreparation: string;
 }
