@@ -1,6 +1,7 @@
 [
   {
     "category": "frango",
+
     "Id": "receita-coxinha",
     "image": "recipe_coxinha",
     "recipe": "Coxinha de carne",
@@ -14,14 +15,11 @@
       "2 folhas de louro",
       "1 colher (chá) de pimenta-do-reino em grãos"
     ],
-    "methodOfPreparation": [
-      "Em uma tigela coloque os filés de frango",
-      "Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor",
-      "Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
-    ]
+    "methodOfPreparation": "Em uma tigela coloque os filés de frango; Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor;Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
   },
   {
     "category": "Carne Vermelha",
+
     "Id": "receita-file-frango",
     "image": "recipe_file_frango",
     "recipe": "File de frango",
@@ -35,14 +33,11 @@
       "2 folhas de louro",
       "1 colher (chá) de pimenta-do-reino em grãos"
     ],
-    "methodOfPreparation": [
-      "Em uma tigela coloque os filés de frango",
-      "Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor",
-      "Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
-    ]
+    "methodOfPreparation": "Em uma tigela coloque os filés de frango; Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor;Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
   },
   {
     "category": "Carne de porco",
+
     "Id": "receita-file-frango",
     "image": "recipe_file_frango",
     "recipe": "File de frango",
@@ -56,14 +51,11 @@
       "2 folhas de louro",
       "1 colher (chá) de pimenta-do-reino em grãos"
     ],
-    "methodOfPreparation": [
-      "Em uma tigela coloque os filés de frango",
-      "Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor",
-      "Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
-    ]
+    "methodOfPreparation": "Em uma tigela coloque os filés de frango; Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor;Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
   },
   {
     "category": "Morango",
+
     "Id": "receita-file-frango",
     "image": "recipe_file_frango",
     "recipe": "File de frango",
@@ -77,14 +69,11 @@
       "2 folhas de louro",
       "1 colher (chá) de pimenta-do-reino em grãos"
     ],
-    "methodOfPreparation": [
-      "Em uma tigela coloque os filés de frango",
-      "Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor",
-      "Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
-    ]
+    "methodOfPreparation": "Em uma tigela coloque os filés de frango; Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor;Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
   },
   {
     "category": "Banana",
+
     "Id": "receita-file-frango",
     "image": "recipe_file_frango",
     "recipe": "File de frango",
@@ -98,14 +87,11 @@
       "2 folhas de louro",
       "1 colher (chá) de pimenta-do-reino em grãos"
     ],
-    "methodOfPreparation": [
-      "Em uma tigela coloque os filés de frango",
-      "Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor",
-      "Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
-    ]
+    "methodOfPreparation": "Em uma tigela coloque os filés de frango; Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor;Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
   },
   {
     "category": "Limao",
+
     "Id": "receita-file-frango",
     "image": "recipe_file_frango",
     "recipe": "File de frango",
@@ -119,10 +105,6 @@
       "2 folhas de louro",
       "1 colher (chá) de pimenta-do-reino em grãos"
     ],
-    "methodOfPreparation": [
-      "Em uma tigela coloque os filés de frango",
-      "Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor",
-      "Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
-    ]
+    "methodOfPreparation": "Em uma tigela coloque os filés de frango; Adicione o alho, o azeite, o limão espremido, o sal, a pimenta do reino e o curry.Misture bem e com as mãos vá massageando os pedaços de frango, isso fará com que o tempero pegue melhor;Aqueça um fio de azeite em uma panela e leve os filés de frango ao fogo médio por cerca de 5 minutos ou até dourar.Vire os filés e repita esse processo até que dourar dos dois lados."
   }
 ]

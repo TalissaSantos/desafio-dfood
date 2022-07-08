@@ -1,1 +1,17 @@
-
+.btn {
+  cursor: pointer;
+  color: #9CB3F7;
+  text-transform: uppercase;
+  margin: 10px;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid $color-font;
+  font-weight: bold;
+  font-family: $font;
+  background: transparent;
+  transition: .3s;
+  &:hover{
+    box-shadow: 5px 5px 0 0 $secundaria;
+  }
+}

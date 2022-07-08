@@ -6,11 +6,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   background: $gradient;
-  height: 20%;
+  height: 10%;
   text-align: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
+
 
   p {
     color: $color-font;
