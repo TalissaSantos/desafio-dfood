@@ -11,7 +11,8 @@
   font-family: $font;
   background: transparent;
   transition: .3s;
-  &:hover{
+
+  &:hover {
     box-shadow: 5px 5px 0 0 $secundaria;
   }
 }

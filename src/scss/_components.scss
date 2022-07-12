@@ -2,95 +2,127 @@ body {
   background: #E0F8D1;
   font-size: $main-source;
   font-family: $font;
+
 }
+
+
 
 .c-title {
   text-align: center;
   font-size: 30px;
+  margin: 22px;
   color: #9CB3F7;
+  font-weight: bold;
+  font-family: $font;
+
+
 }
 
+.form-image {
 
-.c-input {
+  width: 400px;
+    display: flex;
+    background-color: green;
+  // width: 50%;
+  // display: flex;
 
-  justify-content: space-around;
+  // background-color: green;
 
+}
+
+.main-form {
+
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
-  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: auto; */
+  padding: 3rem;
 
-
-
-
-  &-label {
-
-    font-size: $main-source;
-    padding: 10px 0;
-
-    &::after {
-      content: "*";
-      color: brown;
-
-    }
-  }
-
+  flex-basis: 48%;
 }
 
-.c-inputs {
-  border: 2px solid #BEA0D3;
-  border-radius: 4px;
-  background: transparent;
+.c-input-label {
 
-
-  font-family: $font;
   font-size: $main-source;
 
-  &-select {
-    border: 2px solid #BEA0D3;
-    border-radius: 4px;
-    background: transparent;
+  padding: 10px 5px;
 
-    font-family: $font;
-    font-size: $main-source;
+  &::after {
+    content: "*";
+    color: brown;
 
-    &:hover,
-    &:focus {
-      outline: none;
-      transition: 0.3;
-      box-shadow: 3px 3px 3px 0 $secundaria;
-    }
   }
+}
 
-  &-textarea {
-
-    border: 2px solid #BEA0D3;
-    border-radius: 4px;
-    background: transparent;
-
-    font-family: $font;
-    font-size: $main-source;
-
-    &:hover,
-    &:focus {
-      outline: none;
-      transition: 0.3;
-      box-shadow: 3px 3px 3px 0 $secundaria;
-    }
-  }
-
-  &:hover,
-  &:focus {
-    outline: none;
-    transition: 0.3;
-    box-shadow: 3px 3px 3px 0 $secundaria;
-  }
+.buttons {
+  display: flex;
 
 }
 
-// .input-row{
-//   display: flex;
-//   align-items: center;
-//   padding: 0;
-//   margin: 0;
-// }
+.c-container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+
+
+  &-input {
+    border: 2px solid #BEA0D3;
+    border-radius: 4px;
+    background: transparent;
+    font-family: $font;
+    font-size: 16px;
+    margin: 5px;
+
+    &-select {
+      border: 2px solid #BEA0D3;
+      border-radius: 4px;
+      background: transparent;
+      font-family: $font;
+      font-size: 16px;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        transition: 0.3;
+        box-shadow: 3px 3px 3px 0 $secundaria;
+      }
+    }
+
+    &-textarea {
+
+      border: 2px solid #BEA0D3;
+      border-radius: 4px;
+      background: transparent;
+
+      font-family: $font;
+      font-size: 16px;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        transition: 0.3;
+        box-shadow: 3px 3px 3px 0 $secundaria;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      transition: 0.3;
+      box-shadow: 3px 3px 3px 0 $secundaria;
+    }
+
+  }
+}
+
+
+
+
+.input-row {
+  display: flex;
+  align-items: center;
+
+
+}

@@ -1,21 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Recipe } from 'src/models/recipes-interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RecipesService {
 
-constructor() { }
-
-
-
-save(record: Recipe ){
- this
-
-
-
-
 }
+// async getCategory(id: string): Promise<Recipe | undefined>{
+//   const categories = await firstValueFrom(this.getCategory());
 
-}
+//   return categories.find(category => category.categoryId == id);
+
+// }

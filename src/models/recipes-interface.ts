@@ -1,6 +1,6 @@
 export interface Recipe {
   category: string;
-  id: string;
+  categoryId: string,
   image: string;
   recipe: string;
   createdBy: string;

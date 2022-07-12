@@ -1,6 +1,6 @@
 import { HttpClient, } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { take } from 'rxjs';
+import { firstValueFrom } from 'rxjs';
 import { Categories } from 'src/models/categories-interface';
 
 @Injectable({
@@ -17,4 +17,11 @@ export class CategoriesService {
 
   }
 
+
+  async getCategor(id: string): Promise<Categories | undefined>{
+    const categories = await firstValueFrom(this.getCategory());
+
+    return categories.find(category => category.categoryId == id);
+
+}
 }
