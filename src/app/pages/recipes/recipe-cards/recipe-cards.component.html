@@ -1,0 +1,25 @@
+<section class="pacotes">
+  <div class="recipe">
+    <img [src]="recipe.image" [alt]="recipe.recipe" class="recipe-img" />
+    <div class="recipe-cards-principal">
+      <h1 class="recipe-cards-principal-titulo">
+        <a class="recipe-cards-principal-titulo" [routerLink]="['details', recipe.id]">{{ recipe.recipe }}</a>
+      </h1>
+      <ul class="recipe-cards-principal-titulo-ul">
+        <li class="recipe-cards-principal-titulo-li">
+          <img class="recipe-cards-principal-titulo-li-icons" src="assets/icons/padeiro.png" alt="" />
+          <p class="recipe-cards-principal-titulo-p">{{ recipe.createdBy }}</p>
+        </li>
+        <li class="recipe-cards-principal-titulo-li">
+          <img class="recipe-cards-principal-titulo-li-icons" src="assets/icons/clock.png" alt="" />
+          <p class="recipe-cards-principal-titulo-p">{{ recipe.preparationTime }}</p>
+        </li>
+
+        <li class="recipe-cards-principal-titulo-li">
+          <img class="recipe-cards-principal-titulo-li-icons" src="assets/icons/prato.png" alt="" />
+          <p class="recipe-cards-principal-titulo-p">{{ recipe.revenue }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

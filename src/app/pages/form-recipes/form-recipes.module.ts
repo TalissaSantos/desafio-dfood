@@ -7,12 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { CategoriesService } from 'src/app/services/categories.service';
 import { ControlErroComponent } from './control-erro/control-erro.component';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 
 @NgModule({
   declarations: [FormRecipesComponent,ControlErroComponent],
-  imports: [CommonModule, FormRecipesRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],
+  imports: [MatIconModule,CommonModule, FormRecipesRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],
   exports: [FormRecipesComponent,ControlErroComponent],
   providers: [CategoriesService]
 })

@@ -9,7 +9,8 @@ import { Recipe } from 'src/models/recipes-interface';
 })
 export class CardRecipeComponent implements OnInit {
   @Input() card!: CardHome;
-  @Input() recipe!: Recipe;
+
+
 
   constructor() {}
 

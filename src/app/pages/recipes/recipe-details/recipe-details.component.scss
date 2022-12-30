@@ -1,0 +1,54 @@
+@import '/src/styles.scss';
+
+.container {
+  overflow: auto;
+}
+
+.recipes {
+  margin: 10px 0;
+
+  &-img {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    margin: auto;
+    border-radius: 9px;
+    width: 400px;
+
+    &-title {
+      text-align: center;
+      margin: 8px 0;
+    }
+  }
+}
+
+.recipe-details {
+
+  display: grid;
+  grid-template-columns: 0.2fr 0.3fr;
+  max-width: 100%;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+
+
+  &-h2 {
+    // text-align: center;
+    font-family: $font;
+    &-ingre{
+      list-style-type: square;
+      list-style-position: inside;
+      color: #089db0;
+      font-size: 17px;
+    }
+
+    &-ingredients {
+      // display: flex;
+      // align-items: flex-end;
+      // justify-content: space-between;
+
+    }
+  }
+
+}

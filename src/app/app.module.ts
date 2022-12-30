@@ -10,6 +10,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormRecipesModule } from './pages/form-recipes/form-recipes.module';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +23,8 @@ import { FormRecipesModule } from './pages/form-recipes/form-recipes.module';
     ReactiveFormsModule,
     CommonModule,
     HttpClientModule,
-    FormRecipesModule
+    FormRecipesModule,
+    MatButtonModule
   ],
   providers: [CardsHomeService],
   bootstrap: [AppComponent],

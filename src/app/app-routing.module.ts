@@ -21,6 +21,7 @@ const routes: Routes = [
     path: 'recipes',
     loadChildren: () => RecipesModule
   },
+
   {
     path: 'form',
     loadChildren: () => FormRecipesModule

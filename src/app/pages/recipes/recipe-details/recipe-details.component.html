@@ -1,3 +1,21 @@
-<div class="recipe" >
-  <h2 class="title-main-section">{{ recipe.serves }}</h2>
-  pl.
+<section class="container">
+  <div class="recipes">
+    <img class="recipes-img" [src]="recipe?.image" alt="" />
+    <h1 class="recipes-img-title">{{ recipe?.recipe }}</h1>
+  </div>
+
+   <div class="recipe-details">
+    <div>
+    <h2 class="recipe-details-title-h2">Ingredientes:</h2>
+    <ul class="recipe-details-title-h2-ingres">
+      <li class="recipe-details-title-h2-ingre-ingredients" *ngFor="let ingredient of recipe?.ingredients">
+        {{ ingredient }}
+      </li>
+    </ul>
+  </div>
+    <div class="recipe-details-h2-ingredients-preparo">
+      <h2 class="recipe-details-title-h2">Modo de Preparo:</h2>
+      <p class="recipe-details-title-h2-ingredients-preparo">{{ recipe?.methodOfPreparation }}</p>
+  </div>
+ </div>
+</section>

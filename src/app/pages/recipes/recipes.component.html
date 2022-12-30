@@ -1,10 +1,5 @@
-<section class="category-container">
-
-  <div class="category-container-recipes-list">
-    <app-recipe-details  *ngFor="let recipe of recipeList" [recipe]="recipe">
-
-    </app-recipe-details>
-  </div>
+<section class="container">
+  <ng-container class="container-recipes-list"  *ngFor="let recipe of recipeList">
+    <app-recipe-cards   class="container-recipes-list"[recipe]="recipe"></app-recipe-cards>
+  </ng-container>
 </section>
-
-

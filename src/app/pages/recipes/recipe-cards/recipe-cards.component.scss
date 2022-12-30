@@ -1,0 +1,124 @@
+@import '/src/styles.scss';
+
+.pacotes {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+.recipe {
+  width: 17rem;
+  height: 21rem;
+
+  background: #c9184a;
+  margin: 0 10px auto;
+  justify-content: space-between;
+  border-radius: 20px;
+
+    &-img {
+      width: 17rem;
+      border-radius: 10px;
+    }
+  }
+
+
+
+.recipe-cards-principal {
+  padding: 0 15px;
+
+  &-titulo {
+    text-align: center;
+    font-family: $font;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+
+&-ul{
+
+  margin-top: 10px;
+  padding: 0;
+
+}
+&-li{
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  padding: 6px;
+  &-icons{
+    margin-right:5px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+    &-p {
+      color: #fae1dd;
+      text-align: center;
+      font-family: $font;
+      font-size: 14px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+
+
+
+
+
+
+    }
+  }
+}
+
+
+
+
+
+.recipe-cards-img {
+
+  &-principal {
+    padding: 0 15px;
+
+    &-ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+      color: aqua;
+
+    }
+  }
+}
+
+
+
+
+// .card-titulo {
+//   padding: 16px 10px;
+//   color: #faf0ca;
+// }
+
+// .pacotes .card-principal ul li {
+//   font-size: 0.6rem;
+//   /*rever medida padrao*/
+//   display: flex;
+//   align-items: center;
+//   margin: 3px 0;
+//   color: #f7e294;
+// }
+
+// .pacotes .card-principal li svg {
+//   width: 20px;
+//   height: 16px;
+//   margin-right: 0px;
+// }
+
+// .pacotes .card-principal h1 {
+//   font-size: 17px;
+// }

@@ -2,12 +2,9 @@
   <h1 class="card-h1">Receitas sem desperdícios</h1>
   <div class="card-list">
     <app-card-recipe
-      [routerLink]="['/recipes', card.category]"
-      routerLinkActive="active"
       *ngFor="let card of cards"
       class="cards"
       [card]="card"
     ></app-card-recipe>
   </div>
 </main>
-
