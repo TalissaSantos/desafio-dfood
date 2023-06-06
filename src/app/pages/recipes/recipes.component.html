@@ -1,5 +1,5 @@
 <section class="container">
-  <ng-container class="container-recipes-list"  *ngFor="let recipe of recipeList">
-    <app-recipe-cards   class="container-recipes-list"[recipe]="recipe"></app-recipe-cards>
+  <ng-container class="container-list" *ngFor="let recipe of recipeList">
+    <app-recipe-cards class="container-list" [recipe]="recipe"></app-recipe-cards>
   </ng-container>
 </section>

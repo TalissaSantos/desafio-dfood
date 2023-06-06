@@ -3,14 +3,31 @@
 
 .error {
   background: #E0F8D1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 
 img {
-  width: 88vh;
+  max-width: 88vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
 
+}
+
+button {
+  border: 1px solid palevioletred;
+  border-radius: 4px;
+  font-family: $font;
+  color: $color-font;
+
+}
+
+button:hover {
+
+  background-color: $gradient;
 }
