@@ -1,28 +1,36 @@
 @import '/src/styles.scss';
 
+.titulo {
+  font-size: 30px;
+  text-align: center;
+  font-family: $font;
+  padding-top: 10px;
+  color: #800080;
+  width: 100%;
+}
+
 .pacotes {
   padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: center;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 
 .recipe {
-  width: 17rem;
-  height: 21rem;
+  max-width: 17rem;
+  max-height: 21rem;
 
   background: #c9184a;
-  margin: 0 10px auto;
   justify-content: space-between;
   border-radius: 20px;
 
-    &-img {
-      width: 17rem;
-      border-radius: 10px;
-    }
+  &-img {
+    max-width: 17rem;
+    border-radius: 10px;
   }
+}
 
 
 
@@ -37,46 +45,46 @@
     color: black;
     margin-top: 5px;
 
-&-ul{
+    &-ul {
+      margin-top: 10px;
+      padding: 0;
 
-  margin-top: 10px;
-  padding: 0;
+    }
 
-}
-&-li{
-  display: flex;
-  justify-content: flex-start;
-  margin: auto;
-  padding: 6px;
-  &-icons{
-    margin-right:5px;
-    width: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-  }
-}
+    &-li {
+      display: flex;
+      justify-content: flex-start;
+      padding: 6px;
+      text-align: center;
+
+      &-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      &-icons {
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+
+      }
+    }
 
     &-p {
       color: #fae1dd;
-      text-align: center;
       font-family: $font;
       font-size: 14px;
       text-decoration: none;
       display: flex;
-      justify-content: center;
-
-
-
-
-
 
     }
   }
 }
-
-
 
 
 
@@ -95,30 +103,3 @@
     }
   }
 }
-
-
-
-
-// .card-titulo {
-//   padding: 16px 10px;
-//   color: #faf0ca;
-// }
-
-// .pacotes .card-principal ul li {
-//   font-size: 0.6rem;
-//   /*rever medida padrao*/
-//   display: flex;
-//   align-items: center;
-//   margin: 3px 0;
-//   color: #f7e294;
-// }
-
-// .pacotes .card-principal li svg {
-//   width: 20px;
-//   height: 16px;
-//   margin-right: 0px;
-// }
-
-// .pacotes .card-principal h1 {
-//   font-size: 17px;
-// }

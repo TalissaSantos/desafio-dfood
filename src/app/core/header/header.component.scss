@@ -2,7 +2,7 @@
 
 
 .container {
-  background:$gradient;
+  background: palevioletred;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,8 +12,9 @@
   height: 20%;
 }
 
-h1{
+h1 {
   cursor: pointer;
-
-  }
-
+  font-size: 30px;
+  font-family: $font;
+  color: $color-font;
+}

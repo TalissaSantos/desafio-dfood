@@ -12,7 +12,7 @@ interface MenuItem {
 })
 export class NavbarComponent implements OnInit {
   menus: MenuItem[] = [
-    { title: 'Home', link: 'home' },
+    { title: 'Início', link: 'home' },
     { title: 'Crie uma receita', link: 'form' }
   ];
 
