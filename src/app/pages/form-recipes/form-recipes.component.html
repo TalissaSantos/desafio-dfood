@@ -19,19 +19,15 @@
       </div>
 
       <div class="file">
-        <legend class="label">Foto da Receita:</legend>
-        <button mat-icon-button >
-          Selecione uma foto
-          <mat-icon fontIcon="insert_photo"></mat-icon>
-        </button>
-        <!-- <label for="image" class="file-label"> Escolher arquivo </label>
+        <span class="label">Foto da Receita:</span>
+        <label for="image" class="file-label"> Escolher arquivo </label>
         <input
           id="image"
           type="file"
           formControlName="image"
           (change)="fileUpload($event.target)"
           style="display: none"
-        /> -->
+        />
       </div>
 
       <div>
@@ -75,13 +71,17 @@
         </app-control-erro>
       </div>
 
-      <div formArrayName="ingredients" *ngFor="let ingredient of ingredients.controls; last as isLast; index as i" class="input-row">
+      <div
+        formArrayName="ingredients"
+        *ngFor="let ingredient of ingredients.controls; last as isLast; index as i"
+        class="input-row"
+      >
         <label for="ingredients" class="c-input-label">Ingredientes:</label>
         <input [formControl]="ingredient" class="c-container-input" id="ingredients" name="ingredients" />
         <app-control-erro [mostrarErro]="verificaValidTouched('ingredients')" msgErro="Campo obrigatório!">
         </app-control-erro>
         <button type="button" class="btn" *ngIf="ingredients.length > 1" (click)="onRemove(i)">Remover</button>
-        <button type="button" class="btn" *ngIf="isLast  " (click)="onAdd()" >Adicionar</button>
+        <button type="button" class="btn" *ngIf="isLast" (click)="onAdd()">Adicionar</button>
       </div>
 
       <h2>Ingredientes</h2>
@@ -103,7 +103,6 @@
       <div class="buttons">
         <button type="submit" class="btn" (click)="onSubmit()">Salvar</button>
         <button type="button" (click)="onCancel()" class="btn">Cancelar</button>
-
       </div>
     </div>
   </div>

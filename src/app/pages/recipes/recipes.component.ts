@@ -23,7 +23,6 @@ export class RecipesComponent implements OnInit {
     this.id = this.route.snapshot.queryParams['category'];
 
     this.categories = await this.categoriesService.getCategoryId(this.id);
-    console.log(this.categories, 'mok');
     if (!this.categories) {
       this.router.navigate(['/naoencontrado']);
     }

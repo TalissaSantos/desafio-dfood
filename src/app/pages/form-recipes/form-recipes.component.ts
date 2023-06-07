@@ -7,15 +7,12 @@ interface FileEvent extends EventTarget {
   files?: File[];
 }
 
-
-
 @Component({
   selector: 'app-form-recipes',
   templateUrl: './form-recipes.component.html',
   styleUrls: ['./form-recipes.component.scss']
 })
 export class FormRecipesComponent implements OnInit {
-
   form!: FormGroup;
   categories!: Categories[];
   submitted = false;
@@ -37,9 +34,7 @@ export class FormRecipesComponent implements OnInit {
     });
 
     this.form.get('image')?.valueChanges.subscribe({
-      next: value => {
-
-      }
+      next: value => {}
     });
 
     this.categoriesService.getCategory().subscribe({
@@ -59,7 +54,6 @@ export class FormRecipesComponent implements OnInit {
       this.form.reset();
     } else {
       Object.keys(this.form.controls).forEach(campo => {
-        console.log(campo);
         const controle = this.form.get(campo);
         controle?.markAsDirty();
       });

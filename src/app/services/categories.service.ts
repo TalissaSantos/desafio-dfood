@@ -20,12 +20,9 @@ export class CategoriesService {
 
   async getCategoryId(id: string): Promise<Categories | undefined> {
     const categories = await firstValueFrom(this.getCategory());
-    console.log(categories, 'categorias');
 
     return categories.find(category => category.categoryId == id);
   }
-
-
 
   getRecipeById(id: string): Observable<Recipe | undefined> {
     return this.getCategory().pipe(
@@ -39,6 +36,5 @@ export class CategoriesService {
         return recipeSelected;
       })
     );
-
   }
 }
